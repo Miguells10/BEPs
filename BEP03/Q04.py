@@ -9,7 +9,6 @@ Cupons Válidos:
 ● ‘fretegratis’: Subtrai R$ 15,00 do valor.'''
 import re
 
-
 class Q04:
 
     estoque = {"mel": 12.00,
