@@ -1,0 +1,19 @@
+Adiciona uma nova tarefa
+---
+tags:
+    - Tarefas
+parameters:
+  - name: body
+    in: body
+    required: true
+    schema:
+      type: object
+      required:
+        - titulo
+      properties:
+        titulo:
+          type: string
+          example: "Comprar pão"
+responses:
+  201:
+    description: Tarefa criada
