@@ -1,0 +1,27 @@
+Realizar Login
+---
+tags:
+  - Autenticação
+parameters:
+  - name: body
+    in: body
+    required: true
+    schema:
+      type: object
+      required:
+        - user
+        - password
+      properties:
+        user:
+          type: string
+          example: "admin"
+        password:
+          type: string
+          example: "123"
+responses:
+  200:
+    description: Login Realizado com sucesso
+  401:
+    description: Senha ou usuário incorretos
+  400:
+    description: Dados incompletos

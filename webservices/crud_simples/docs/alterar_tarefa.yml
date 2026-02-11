@@ -1,0 +1,27 @@
+Atualiza uma tarefa existente
+---
+tags:
+    - Tarefas
+parameters:
+  - name: tarefa_id
+    in: path
+    type: integer
+    required: true
+    description: ID da tarefa para atualizar
+  - name: body
+    in: body
+    required: true
+    schema:
+      type: object
+      properties:
+        titulo:
+          type: string
+          example: "Novo título da tarefa"
+        concluida:
+          type: boolean
+          example: true
+responses:
+  200:
+    description: Tarefa atualizada com sucesso
+  404:
+    description: Tarefa não encontrada

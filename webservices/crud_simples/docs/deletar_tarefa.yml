@@ -1,0 +1,13 @@
+Deleta uma tarefa pelo ID
+---
+tags:
+    - Tarefas
+parameters:
+  - name: tarefa_id
+    in: path
+    type: integer
+    required: true
+    description: ID da tarefa para deletar
+responses:
+  204:
+    description: Tarefa deletada com sucesso

@@ -1,0 +1,7 @@
+Lista todas as tarefas
+---
+tags:
+  - Tarefas
+responses:
+  200:
+    description: Retorna a lista de tarefas
